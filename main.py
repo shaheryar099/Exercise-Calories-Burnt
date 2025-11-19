@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 import pickle
-import sklearn
+from sklearn import *
 
 # Importing data
 df = pickle.load(open('df.pkl', 'rb'))
@@ -39,3 +39,4 @@ if st.button("Predict the calories"):
 
     # Output
     st.success(f'Predicted Burnt Calories: {prediction:.2f}')
+
